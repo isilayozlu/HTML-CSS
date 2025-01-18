@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        body{
+            background-color: #f2f2f2;
+        }
+        .card{
+            background-color: white;
+            display: inline-block;
+            width:250px;
+            height: 250px;
+            margin:30px;
+        }
+
+        .card-1{
+            box-shadow: 10px 10px;
+        }
+
+        .card-2{
+            box-shadow: 10px 10px 10px;
+        }
+
+        .card-3{
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+        }
+
+        .card-4:hover{
+            box-shadow:10px 10px 10px red;
+        }
+        .card-5{
+            border:1px solid #aaaa;
+        }
+        .card-5:hover{
+            box-shadow: 3px 10px 10px #aaaa;
+        }
+    </style>
+</head>
+<body>
+        <div class="card card-1"></div>
+        <div class="card card-2"></div>
+        <div class="card card-3"></div>
+        <div class="card card-4"></div>
+        <div class="card card-5"></div>
+
+</body>
+</html>

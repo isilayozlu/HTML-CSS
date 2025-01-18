@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamics Retail POS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#faf9f8 ;
+        }
+        header{
+            display:flex;
+            flex-wrap: wrap;
+            padding:5px;
+            background-color: black;
+        }
+
+        header i{
+            color:white;
+            font-size: 18px;
+            padding:10px ;
+            display: flex;
+            float: left;
+            margin-right: 15px;
+            transition:all 0.3s;
+
+        }
+
+        header i:hover{
+            background-color: #333334;
+        }
+        .search{
+            margin:auto;
+        }
+
+        #button{
+            padding:7px;
+            width:600px;
+            background-color:#333334;
+            border:none;
+            color:white;
+        }
+        #button:hover{
+            background-color: white;
+        }
+
+        #content{
+            display:flex;
+            float:left;
+            flex-wrap:nowrap;
+        }
+
+        #menu{
+            width:50px;
+            height:100vh;
+            background-color: #ddd;
+        }
+
+        #menu i{
+            display:inline-block;
+            color:gray;
+            margin-top:10px;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            padding:10px;
+            transition:all 0.3s;
+            border-left:4px solid #ddd;
+        }
+
+        ul li:hover{
+            background-color: white;
+            border-left:4px solid green;
+
+        }
+
+        #first img{
+            width:500px;
+            margin-right: 20px;
+        }
+
+
+        #second{
+            margin-left: 20px;
+            width:500px;
+        }
+
+        h6{
+            font-size: 24px;
+            font-weight: 100;
+            margin:10px 0px;
+
+        }
+
+
+        .box1{
+            position: relative;
+            text-align: center;
+            margin:2px;
+            float:left;
+            width:150px;
+            height:150px;
+            background-color:#057750;
+            color:white;
+            border-radius: 5px;
+        }
+        p{
+            text-align: left;
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            padding:10px;
+            color:white;
+        }
+
+        .renk{
+            background-color:#08a160;
+        }
+
+        .box2{
+            position: relative;
+            text-align: center;
+            float:left;
+            width:227px;
+            height:150px;
+            margin:2px;
+            background-color:#08a160;
+            color:white;
+            border-radius: 5px;
+        }
+
+        .yükseklik{
+            height:100px;
+        }
+
+        .renk2{
+            background-color: #008000;
+        }
+
+        #third{
+            width:300px;
+        }
+
+        .geniş{
+            width:304px;
+        }
+
+        #fourth{
+            margin-left:40px;
+            width:320px;
+        }
+
+        .renk3{
+            background-color: #2b2e34;
+        }
+
+        .renk4{
+            background-color: #5a5a5a;
+        }
+
+        .renk5{
+            background-color:  #000000;
+
+        }
+
+        .renk6{
+            background-color:  #400040;
+        }
+
+        #boxes{
+            font-size: 35px;
+            position:relative;
+            top:40px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <i class="fa-solid fa-bars" ></i>
+
+        <div class="search">
+          <input type="text" placeholder="Ara" id="button">
+        </div>
+
+        <div  id=" sol_menü "class="user_info">
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-question"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+            <i id="user" class="fa-solid fa-circle-user"></i>
+        </div>
+        </header>
+
+
+
+        <div id="content">
+            <div id="menu">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i> </a></li>
+                <li><a href=""><i class="fa-solid fa-screwdriver-wrench"></i> </a></li>
+                <li><a href=""><i class="fa-solid fa-bars"></i> </a></li>
+                <li><a href=""><i class="fa-solid fa-bag-shopping"></i> </a></li>
+                <li><a href=""><i class="fa-solid fa-0"></i> </a></li>
+            </ul>
+            </div>
+
+
+            <div id="first">
+            <img src="arçelik.png">
+            </div>
+
+            <div id="second">
+                <h6>Başlangıç</h6>
+
+                <div id="box">
+                <div class="box1">
+                    <i id="boxes" class="fa-solid fa-chart-line"></i>
+                    <p>Paro Puan Sorgulama</p>
+                </div>
+
+                <div class="box1"> <p>Donanım istasyonunu seç</p></div>
+                <div class="box1"> <p>Askıdaki Pao İşlemini Bitir</p> </div>
+
+                <div class="box2">
+                    <i id="boxes" class="fa-solid fa-boxes-stacked"></i>
+                    <p> Stok Kontrolü</p></div>
+                <div class="box2">
+                    <i id="boxes"class="fa-solid fa-box-open"></i>
+                    <p>Ürün Ara </p></div>
+
+                
+                <div class="box1 renk">
+                    <i id="boxes "class="fa-solid fa-building-circle-arrow-right"></i>
+                    <p>Sipariş Bul </p></div>
+
+                <div class="box1 renk">
+                    <i id="boxes" class="fa-solid fa-user-group"></i>
+                    <p>Müşteri Arama</p></div>
+                <div class="box1 renk2"> <p>Detaylı Müşteri Arama</p></div>
+
+                <div class="box2 yükseklik" id="h">
+                    <i id="boxes"class="fa-solid fa-tags"></i>
+                    <p>Fiyat Kontrolü</p></div>
+                <div class="box2 renk2 yükseklik" id="h"><p>CRM Kampanya Sorgula</p></div>
+            </div>
+            </div>
+
+
+            <div id="third">
+                <h6>Kasa İşlemleri</h6>
+
+                <div class="box1 geniş">
+                    <i id="boxes" class="fa-solid fa-list"></i>
+                    <p>Hareketleri Göster</p></div>
+                <div class="box1 geniş"> <p>Masraf Kaydı</p></div>
+            </div>
+
+            <div id="fourth">
+                <h6> Operasyonlar</h6>
+
+                <div class="box1 geniş renk3">
+                    <i id="boxes" class="fa-solid fa-key"></i>
+                    <p>Şifre Değiştir</p></div>
+           
+                <div class=" box1 renk4"><p>Veritanabı  Bağlantı Durumu</p></div>
+                <div class=" box1 renk4"><p>Açık Kasa Föyü Sorgulama</p></div>
+           
+
+                <div class=" box1 renk"><p>Vardiya Kapat</p></div>
+                <div class=" box1 renk1"><p>Vardiyayı Askıya AL</p></div>
+
+                <div class=" box1 renk5"><p>TRX ile Paro İptal</p></div>
+                <div class=" box1 renk5"><p>Asist'te Yapılan Paro'yu İptal Et</p></div>
+            
+                <div class="box1 geniş renk6"> <p>Mağaza Belleğini Temizle</p></div>
+                
+                <div class=" box1 renk5"><p>İşlem No ile CRM İptal</p></div>
+            </div>
+        </div>
+</body>
+</html>

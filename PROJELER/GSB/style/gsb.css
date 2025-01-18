@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff1b8 ;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Tam yükseklik için */
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey hizalamak için */
+}
+
+#flag{
+    margin-top:10px;
+    margin-right:10px;
+    text-align: right;
+}
+
+#flag img{
+    width: 25px;
+}
+#title{
+    text-align: center;
+}
+#title img{
+    width: 1100px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content p{
+    font-family: "Fira Sans", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.red{
+    color:#ff1e2f ;
+}
+
+.green{
+    color:#2a6603;
+}
+
+.bold{
+    font-style: bold;
+}
+
+#giriş{
+    width:35%;
+    background: linear-gradient(to bottom,#ffea97,#fff1b8);
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#giriş label{
+    display:block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#giriş input{
+    width:90%;
+    padding:8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button{
+    padding:10px;
+    margin-top: 10px;
+    background-color: #ffde5a;
+    color:black;
+    border-radius: 20px;
+    border:2px solid black;
+    text-decoration: none;
+    display:inline-block;
+    width: 80%;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.button:hover{
+    background: linear-gradient(to bottom,#ffaa41, #ffde5a);
+}
+
+.ondört{
+    font-size:14px;
+}
+.on{
+    font-size: 10px;
+}
+
+#address{
+    text-align: right;
+}
+
+#address img{
+    width: 11%;
+    margin-bottom:10px;
+    margin-right:10px;
+}
+
+#footer{
+    background-color: black;
+    padding:20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.sıksorulan{
+    background-color:#1a2c39;
+    color:white;
+    padding:20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.sıksorulan:hover{
+    background: linear-gradient(to bottom, #274255, #273c49);
+}
