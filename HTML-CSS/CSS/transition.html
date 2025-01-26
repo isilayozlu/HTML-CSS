@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        .card{
+            background-color: blue;
+            width:150px;
+            height:150px;
+            margin: 5px;
+            transition: width 1s, height 2s, background-color 1s;
+            transition-delay: 0.5s;
+        }
+
+        .card:hover{
+            width:400px;
+            background-color: red;
+        }
+        .card-2{
+            transition-timing-function: ease-out;
+        }
+
+        .card-3{
+            transition-timing-function: ease-in;
+        }
+
+        .card-4{
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .card-5{
+            transition-timing-function: linear;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card card-1"></div>
+    <div class="card card-2"></div>
+    <div class="card card-3"></div>
+    <div class="card card-4"></div>
+    <div class="card card-5"></div>
+</body>
+</html>

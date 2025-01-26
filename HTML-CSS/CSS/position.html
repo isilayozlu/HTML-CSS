@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Uygulamasi</title>
+    <style>
+
+        .box{
+            padding:10px;
+            width:200px;
+            height:200px;
+            margin:5px;
+        }
+    
+        #first{
+            background-color: red;
+        }
+        #second{
+            background-color: blue;
+            position:relative;
+            top:20px;
+            left:50px;
+        }
+        #third{
+            background-color: green;
+            position:sticky;
+            top:50px;
+           
+        }
+        #four{
+            background-color: yellow;
+            position:absolute;
+            top:100px;
+            left:500px;
+        }
+        #five{
+            background-color: brown;
+            position:fixed;
+            top:0;
+            right:0;
+        }
+        #six{
+            background-color: pink;
+            position:relative;
+            left:400px;
+        }
+        #seven{
+            background-color: bisque;
+        }
+        #eight{
+            background-color: purple;
+            position:fixed;
+            bottom: 5px;
+            right:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="box" id="first"> box 1</div>
+        <div class="box" id="second"> box 2</div>
+        <div class="box" id="third"> box 3</div>
+        <div class="box" id="four"> box 4</div>
+        <div class="box" id="five"> box 5</div>
+        <div class="box" id="six"> box 6</div>
+        <div class="box" id="seven"> box 7</div>
+        <div class="box" id="eight"> box 8</div>
+    </div>
+    
+</body>
+</html>

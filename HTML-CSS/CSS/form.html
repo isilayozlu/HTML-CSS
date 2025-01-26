@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+    <style>
+        *{
+            margin:0px;
+            box-sizing: border-box;
+            transition:all 0.3s;
+        }
+
+        body{
+            width:900px;
+            margin:20px auto;
+        }
+
+        #form{
+            background-color: #dcdcdc;
+            padding:20px;
+        }
+
+        .content{
+            width:100%;
+            padding:8px 0px;
+        }
+
+        .col25{
+            width:25%;
+            float:left;
+        }
+
+        .col75{
+            width:75%;
+            float:left;
+        }
+
+        label{
+            display: inline-block;
+        }
+        
+        input[type="text"], textarea, select{
+            padding:10px;
+            border-radius: 5px;
+            border:1px solid #ced4da;
+        }
+
+        .btn{
+            padding:10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color:white;
+            border:none;
+        }
+
+        .btn:hover{
+            background-color: #0058b6;
+        }
+
+        .clearfix:after{
+            content:"";
+            display: block;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="form">
+   <div class="content clearfix">
+        <label class="col25">Full Name</label>
+        <input class="col75" type="text" name="fullName">
+    </div>
+
+    <div class="content clearfix">
+        <label  class="col25">E-mail</label>
+        <input class="col75" type="text" name="email">
+    </div>
+    
+    <div class="content clearfix">
+        <label  class="col25">Message</label>
+        <textarea class="col75" name="message"></textarea>
+
+    </div>
+    
+    <div class="content clearfix">
+    <label  class="col25">Country</label>
+    <select  class="col75" name="country">
+        <option value="Türkiye"> Türkiye </option>
+        <option value="Almanya"> Almanya </option>
+    </select>
+</div>
+
+<div class="content clearfix">
+<input class="btn" type="submit" value="submit" style="margin-left:25%;">
+</div>
+</div>
+    
+</body>
+</html>

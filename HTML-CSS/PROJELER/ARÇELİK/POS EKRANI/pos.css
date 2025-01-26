@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    transition:all 0.3s;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+}
+body{
+    background-color:#faf9f8 ;
+}
+
+#navbar{
+    background-color: black;
+    display:flex;
+    position:relative;
+}
+
+#menu{
+    color:white;
+    padding:15px 17px;
+}
+
+#menu:hover{
+    background-color: green;
+}
+
+#search{
+    position:absolute;
+    left:30%;
+}
+
+input{
+    padding:7px;
+    width:700px;
+    margin:8px;
+    border:none;
+    border-radius: 5px;
+    background-color: #4d4c4c;
+}
+
+input::placeholder{
+    color:white;
+}
+
+#right_menu{
+    position:absolute;
+    right:0px;  
+}
+
+ul{
+    list-style-type: none;
+}
+
+#right_menu ul li{
+    padding:15px;
+    display: inline-block;
+}
+
+#right_menu ul li a{
+    display: inline-block;
+    
+    color:white;
+}
+
+#right_menu ul li:hover{
+    background-color: #333334;
+}
+
+#container{
+    display:flex;
+}
+
+#sol-menu{
+    background-color: #f3f2f1;
+    height:95vh;
+    width:fit-content
+}
+
+#sol-menu ul li{
+    text-align: center;
+}
+
+#sol-menu ul li a{
+    display:inline-block;
+    color:black;
+    padding:14px;
+}
+
+#sol-menu ul li:nth-child(1){
+    border-left: 4px solid green;
+    margin-top: 48px;
+}
+
+#sol-menu ul li:hover{
+    background-color: #edebe9;
+}
+
+#photo img{
+    width: 610px;
+}
+
+#başlangıç, #kasa-işlemleri,#operasyonlar{
+    margin-left:40px;
+    margin-top:10px ;
+}
+
+.başlık{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+}
+
+.boxes{
+    width:470px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxes div{
+    width:230px;
+    height:150px;
+    margin-top:5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.boxes p{
+    position:absolute;
+    left:5px;
+    bottom:5px;
+    font-size: 20px;
+}
+
+.boxes i{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.renk{
+    background-color:#007652;
+}
+
+.renk2{
+    background-color: #00a064;
+}
+
+.renk3{
+   background-color: rgb(0,127,26);
+}
+
+.renk4{
+    background-color:#007652;
+}
+
+#kasa-işlemleri .boxes, #operasyonlar .boxes{
+    width:300px;
+}
+
+#kasa-işlemleri .boxes div ,#operasyonlar .boxes div{
+    width:300px;
+}
+
+.renk5{
+    background-color:  #2b2e34;
+}
+
+.renk6{
+    background-color:  #000000;
+}
+
+.renk7{
+    background-color:  #5a5a5a;
+}
+
+.renk8{
+    background-color:  #c91abc;
+}
+
+.renk9{
+    background-color:  #43033f;
+}
+
+.tooltip{
+    position:relative;
+}
+
+.tooltip .text{
+    display:none;
+
+    width:80px;
+    font-size: 12px;
+    color:#000000;
+    background-color: white;
+    border:1px solid rgba(0,0,0,.125);
+    box-shadow: 0px 3px 7px rgba(0,0,0,.7);
+    text-align: center;
+    padding:5px 3px;
+    z-index: 1;
+
+    position:absolute;
+    top:9px;
+    left:80%;
+    
+}
+
+#sol-menu ul li:hover .text{
+    display:inline-block;
+}
